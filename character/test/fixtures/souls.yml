@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  gender: MyString
+  career: MyString
+  physical: MyText
+  physical_image_url: MyString
+  style: MyText
+  personality_type: MyText
+  quirks1: MyText
+  quirks2: MyText
+  quirks3: MyText
+  backstory: MyText
+
+two:
+  name: MyString
+  gender: MyString
+  career: MyString
+  physical: MyText
+  physical_image_url: MyString
+  style: MyText
+  personality_type: MyText
+  quirks1: MyText
+  quirks2: MyText
+  quirks3: MyText
+  backstory: MyText

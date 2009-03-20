@@ -1,0 +1,11 @@
+<p>
+  <b>Name:</b>
+  <%=h @user.name %>
+</p>
+
+<%= render(:partial => "story", :collection => @stories) %>
+
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to "Back", :back %>

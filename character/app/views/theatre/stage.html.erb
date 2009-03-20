@@ -1,0 +1,27 @@
+<p>Hello <%=h @user.name %></p>
+<p><%= link_to 'Logout', :controller => 'theatre', :action => 'logout' %></p>
+</br>
+<h1>Currently in the Theatre</h1>
+<br/>
+<br/>
+<div>
+	<table>
+		<tr>
+			<td>Character</td>
+		</tr>
+		<% for soul in @souls -%>
+		<tr>
+			<td><%= link_to soul.name, soul %></td>
+			<td><%= link_to 'Destroy', soul, :confirm => 'Are you sure you want to kill this soul?', :method => :delete %></td>
+		</tr>
+		<% end %>
+	</table>
+</div>
+
+<br/>
+<br/>
+<div>
+	<%= button_to 'Create New Character', new_soul_path %>
+</div>
+
+

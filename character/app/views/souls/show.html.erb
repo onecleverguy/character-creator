@@ -1,0 +1,46 @@
+<div id="content-wrap">
+
+<div id="back"><span class="backedit"><%= link_to "Back", :back %></span></div>
+<div id="back"><span class="backedit"><%= link_to "Stage", :controller => "theatre", :action => "stage" %></span></div>
+
+<h1><%=h @soul.name %></h1><br />
+<div id="editsoul"><span class="backedit"><%= link_to 'Edit', edit_soul_path(@soul) %></span></div>
+
+  <h2>gender</h2>
+  <p><%=h @soul.gender %></p>
+
+  <h2>age</h2>
+  <p><%=h @soul.age %></p>
+
+  <h2>career</h2>
+  <p><%=h @soul.career %></p>
+
+  <h2>physical</h2>
+  <p><%=h @soul.physical %></p>
+
+  <h2>visual guide</h2>
+  <p><%= image_tag @soul.visual_guide, :class => 'list-image' %></p>
+
+  <h2>style</h2>
+  <p><%=h @soul.style %></p>
+
+  <h2>personality type</h2>
+  <p><%=h @soul.personality_type %></p>
+
+  <h2>quirks</h2>
+  <p><%=h @soul.quirks1 %></p>
+  <p><%=h @soul.quirks2 %></p>
+  <p><%=h @soul.quirks3 %></p>
+
+  <h2>backstory</h2>
+  <p><%=h @soul.backstory %></p>
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+  <div id="editsoul"><span class="backedit"><%= link_to 'Edit', edit_soul_path(@soul) %></span></div>
+  <br />
+  <div id="back"><span class="backedit"><%= link_to "Back", :back %></span></div>
+  <div id="back"><span class="backedit"><%= link_to "Stage", :controller => "theatre", :action => "stage" %></span></div>
+
+</div>

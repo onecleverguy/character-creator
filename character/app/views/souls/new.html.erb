@@ -1,0 +1,54 @@
+<div id="content-wrap">
+  
+<div id="back"><span class="backedit"><%= link_to "Back", :back %></span></div>
+<div id="back"><span class="backedit"><%= link_to "Stage", :controller => "theatre", :action => "stage" %></span></div>
+<h1>New Soul</h1>
+
+
+<% form_for(@soul) do |f| %>
+
+  <h2><%= f.label :name %> <span class="req">Required. If you don't know the name yet, just use a placeholder.</span></h2>
+  <%= f.error_messages %>
+  <p><%= f.text_field :name %></p>
+
+  <h2><%= f.label :gender %></h2>
+  <p><%= f.text_field :gender %></p>
+
+  <h2><%= f.label :age %></h2>
+  <p><%= f.text_field :age %></p>
+
+  <h2><%= f.label :career %></h2>
+  <p><%= f.text_field :career %></p>
+
+<!-- TEXT AREA SIZE IS HARDCODED. NOT GOOD. FIND CSS SOLUTION -->
+
+  <h2><%= f.label :physical %></h2>
+  <p><%= f.text_area(:physical, :rows => 3) %></p>
+
+  <h2><%= f.label :visual_guide %></h2>
+  <p><%= f.text_field :visual_guide %></p>
+
+  <h2><%= f.label :style %></h2>
+  <p><%= f.text_area(:style, :rows => 3) %></p>
+
+  <h2><%= f.label :personality_type %></h2>
+  <p><%= f.text_area(:personality_type, :rows => 3) %></p>
+
+  <h2><%= f.label :quirks1 %></h2>
+  <p><%= f.text_area(:quirks1, :rows => 2) %></p>
+  <p><%= f.text_area(:quirks2, :rows => 2) %>
+  <p><%= f.text_area(:quirks3, :rows => 2) %>
+
+  <h2><%= f.label :backstory %></h2>
+  <p><%= f.text_area(:backstory, :rows => 4) %></p>
+
+  <p><%= f.submit("Create", :size => 1) %></p>
+<% end %>
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+  <div id="back"><span class="backedit"><%= link_to "Back", :back %></span></div>
+  <div id="back"><span class="backedit"><%= link_to "Stage", :controller => "theatre", :action => "stage" %></span></div>
+
+</div>

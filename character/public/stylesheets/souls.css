@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*============================================================
+ Base Styles
+============================================================*/
+
+body {
+  background: url(../images/sitebg.jpg);
+  background-repeat: repeat-x;
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 150%;
+  color: #eaf1cd;
+}
+
+p {
+  padding: 0 10px 0 10px;
+}
+
+#content-wrap {
+  width: 400px;
+  margin: 0 auto;
+}
+
+
+
+
+/*============================================================
+ Icons
+============================================================*/
+
+#editsoul {
+  display: block;
+  background-image: url(../images/user_edit.png);
+  background-repeat: no-repeat;
+  overflow: visible;
+  border: none;
+  width: 120px;
+  padding-left: 24px;
+}
+
+#showsoul {
+  display: block;
+  background-image: url(../images/eye.png);
+  background-repeat: no-repeat;
+  overflow: visible;
+  border: none;
+  width: 120px;
+  padding-left: 24px;
+}
+
+#back {
+  display: block;
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  overflow: visible;
+  border: none;
+  width: 120px;
+  padding-left: 24px;
+}
+
+
+
+
+
+/*============================================================
+ Text Styles
+============================================================*/
+
+h1 {
+  font: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  line-height: 150%;
+  color: #eaf1cd;
+  margin-bottom: -20px;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: .7em;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: lowercase;
+  line-height: 150%;
+  color: #f2f5e8;
+  margin-top: 40px;
+  border-top: solid 1px #35372d;
+  padding-top: 10px;
+}
+
+.backedit {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: .7em;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 150%;
+  color: #f2f5e8;
+  
+}
+
+.backedit a {
+  text-decoration: underline;
+  color: #0ac6f5;
+}
+
+.req {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: .7em;
+  font-style: italic;
+  color: #666666;
+}
+
+/*============================================================
+ Form Styles
+============================================================*/
+
+input, textarea {
+  background-color: #333333;
+  width: 364px;
+  padding: 8px;
+  color: #f2f5e8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 150%;
+  border: none;
+}
+
+
+
+/*============================================================
+ Error Messages
+============================================================*/
+
+.fieldWithErrors {
+  padding: 5px;
+  background-color: #6f0000;
+  display: table;
+}
+
+#errorExplanation {
+  width: 370px;
+  padding: 10px;
+  background-color: #6f0000;
+  margin: -10px 0 -18px 0;
+}
+
+#errorExplanation h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #d98d8d;
+  border: none;
+  margin: 0;
+}
+
+#errorExplanation p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: .7em;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: #f3b0b0;
+}
+
+#errorExplanation ul li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: .7em;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: #f3b0b0;
+  list-style: circle;
+}

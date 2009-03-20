@@ -1,0 +1,62 @@
+<p>
+  <b>Name:</b>
+  <%=h @soul.name %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%=h @soul.gender %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%=h @soul.age %>
+</p>
+
+<p>
+  <b>Career:</b>
+  <%=h @soul.career %>
+</p>
+
+<p>
+  <b>Physical:</b>
+  <%=h @soul.physical %>
+</p>
+
+<p>
+    <%= image_tag @soul.physical_image_url, :class => 'list-image' %>
+</p>
+
+<p>
+  <b>Style:</b>
+  <%=h @soul.style %>
+</p>
+
+<p>
+  <b>Personality type:</b>
+  <%=h @soul.personality_type %>
+</p>
+
+<p>
+  <b>Quirks1:</b>
+  <%=h @soul.quirks1 %>
+</p>
+
+<p>
+  <b>Quirks2:</b>
+  <%=h @soul.quirks2 %>
+</p>
+
+<p>
+  <b>Quirks3:</b>
+  <%=h @soul.quirks3 %>
+</p>
+
+<p>
+  <b>Backstory:</b>
+  <%=h @soul.backstory %>
+</p>
+
+
+<%= link_to 'Edit', edit_soul_path(@soul) %> |
+<%= link_to 'Back', souls_path %>

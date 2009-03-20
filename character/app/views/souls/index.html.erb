@@ -1,0 +1,44 @@
+<h1>Here are the Souls you have birthed...</h1>
+
+<table>
+  <tr>
+	<th><u>Creator</th>
+    <th><u>Name</th>
+    <th><u>Gender</th>
+	<th><u>Age</th>
+    <th><u>Career</th>
+    <th><u>Physical</th>
+    <th><u>Visual Guide</th>
+    <th><u>Style</th>
+    <th><u>Personality type</th>
+    <th><u>Quirks1</th>
+    <th><u>Quirks2</th>
+    <th><u>Quirks3</th>
+    <th><u>Backstory</th>
+  </tr>
+
+<% for soul in @souls %>
+  <tr>
+	<td><%=h soul.user.name %></td>
+    <td><%=h soul.name %></td>
+    <td><%=h soul.gender %></td>
+	<td><%=h soul.age %></td>
+    <td><%=h soul.career %></td>
+    <td><%=h soul.physical %></td>
+    <td><%= image_tag soul.visual_guide, :class => 'list-image' %></td>
+    <td><%=h soul.style %></td>
+    <td><%=h soul.personality_type %></td>
+    <td><%=h soul.quirks1 %></td>
+    <td><%=h soul.quirks2 %></td>
+    <td><%=h soul.quirks3 %></td>
+    <td><%=h soul.backstory %></td>
+    <td><%= link_to 'Show', soul %></td>
+    <td><%= link_to 'Edit', edit_soul_path(soul) %></td>
+    <td><%= link_to 'Destroy', soul, :confirm => 'Are you sure you want to kill this soul?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New soul', new_soul_path %>

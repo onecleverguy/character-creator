@@ -1,0 +1,2 @@
+module SoulsHelper
+end
